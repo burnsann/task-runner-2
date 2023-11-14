@@ -13,6 +13,7 @@ body {
     text-align: center;
     margin-bottom: 5px;
     letter-spacing: 5px;
+    margin-top: 0;
 }
 
 .section-subtitle {
@@ -112,6 +113,7 @@ body {
     padding-bottom: 80px;
     background-color: #ffffff;
     color: #000;
+    margin-bottom: 0;
 }
 
 .services .col-4 {
@@ -129,3 +131,38 @@ body {
     font-size: 30px;
 }
 
+.services .service-description {
+    color: #b2bec3;
+    font-weight: 700;
+}
+
+/* Portfolio */
+
+.portfolio .container {
+    background-color: #f5f6fa;
+    margin-top: 0;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.portfolio .section-title {
+    color: #000;
+}
+
+.portfolio img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.portfolio .col-4 {
+    text-align: center;
+    margin: 30px 0;
+    padding: 0 10px;
+    color: #000;
+}
+
+.portfolio .portfolio-subtitle {
+    color: #b2bec3;
+    font-style: italic;
+}
