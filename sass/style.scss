@@ -29,3 +29,58 @@ body {
 .navigation .col-9 {
     text-align: right;
 }
+
+/* Header */
+
+.header .container {
+    height: 90vh;
+    background-image: url("https://i.postimg.cc/prC0000v/pexels-rachel-claire-4992658.jpg");
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+.header .container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.header .col-12 {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 35px;
+    font-weight: 400;
+    font-style: italic;
+}
+.header h2 {
+    font-size: 70px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 10px 0;
+}
+
+.header .btn {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #ffffff;
+    border: #ffdd59 solid 2px;
+    border-radius: 5px;
+    background-color: #ffdd59;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
