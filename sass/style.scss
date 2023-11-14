@@ -1,7 +1,27 @@
+/* Global */
+
 body {
     background-color: black;
     color: white;
     font-family: 'Dosis', sans-serif;
+}
+
+.section-title {
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 5px;
+    letter-spacing: 5px;
+}
+
+.section-subtitle {
+    font-size: 25px;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+    color: #b2bec3;
+    margin-top: 0;
 }
 
 /* Navigation */
@@ -84,3 +104,28 @@ body {
     padding: 10px 20px;
     margin-top: 20px;
 }
+
+/* Services */
+
+.services .container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #ffffff;
+    color: #000;
+}
+
+.services .col-4 {
+    text-align: center;
+    padding: 20px;
+}
+
+.services i {
+    height: 60px;
+    width: 60px;
+    line-height: 50px;
+    border: #ffdd59 solid 5px;
+    border-radius: 50%;
+    color: #ffdd59;
+    font-size: 30px;
+}
+
