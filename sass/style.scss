@@ -1,8 +1,11 @@
 /* Global */
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
     background-color: black;
-    color: white;
     font-family: 'Dosis', sans-serif;
 }
 
@@ -17,7 +20,7 @@ body {
 }
 
 .section-subtitle {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
     font-style: italic;
     text-align: center;
@@ -25,7 +28,16 @@ body {
     margin-top: 0;
 }
 
+.row {
+    text-align: center;
+}
+
 /* Navigation */
+
+.navigation .brand {
+    color: #ffdd59;
+    font-weight: 700;
+}
 
 .navigation a {
     text-decoration: none;
@@ -43,11 +55,17 @@ body {
     position: relative;
 }
 
-.navigation .col-3 {
+.navigation .col-md-3 {
     margin: auto;
+    text-align: left;
 }
 
-.navigation .col-9 {
+.navigation .col-sm-12 {
+    text-align: center;
+}
+/* Dlaczego powyższe wycentrowanie działa na col-md-3, a nie działa na col-sm-12 dla ul? */
+
+.navigation .col-md-9 {
     text-align: right;
 }
 
@@ -83,6 +101,7 @@ body {
     font-size: 35px;
     font-weight: 400;
     font-style: italic;
+    color: #ffffff;
 }
 .header h2 {
     font-size: 70px;
@@ -90,6 +109,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 3px;
     margin: 10px 0;
+    color: #ffffff;
 }
 
 .header .btn {
@@ -116,11 +136,6 @@ body {
     margin-bottom: 0;
 }
 
-.services .col-4 {
-    text-align: center;
-    padding: 20px;
-}
-
 .services i {
     height: 60px;
     width: 60px;
@@ -143,9 +158,10 @@ body {
     margin-top: 0;
     padding-top: 80px;
     padding-bottom: 80px;
+    color: #000;
 }
 
-.portfolio .section-title {
+.portfolio .portfolio-title {
     color: #000;
 }
 
@@ -155,10 +171,7 @@ body {
     object-fit: cover;
 }
 
-.portfolio .col-4 {
-    text-align: center;
-    margin: 30px 0;
-    padding: 0 10px;
+.portfolio .portfolio-title {
     color: #000;
 }
 
@@ -200,4 +213,27 @@ body {
 .page-footer .col-4 {
     display: flex;
     align-items: center;
+}
+
+
+@media (max-width: 767px) {
+    .header h1 {
+        font-size: 25px;
+    }
+
+    .header h2 {
+        font-size: 60px;
+    }
+
+    .header .btn {
+        font-size: 15px;
+    }
+
+    .page-footer i {
+        height: 35px;
+        width: 35px;
+        font-size: 15px;
+        border-radius: 50%;
+        line-height: 35px;
+    }
 }
